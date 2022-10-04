@@ -5,7 +5,7 @@ Refer: https://docs.jboss.org/kogito/release/1.27.0/html_single/#proc-kogito-cre
 
 - Create a maven project using Maven Archetype for Kogito
     ``` 
-mvn archetype:generate -DarchetypeGroupId=org.kie.kogito -DarchetypeArtifactId=kogito-spring-boot-archetype -DgroupId=org.acme -DartifactId=my-first-kogito -DarchetypeVersion=1.27.0.Final -Dversion=1.0-SNAPSHOT
+    mvn archetype:generate -DarchetypeGroupId=org.kie.kogito -DarchetypeArtifactId=kogito-spring-boot-archetype -DgroupId=org.acme -DartifactId=my-first-kogito -DarchetypeVersion=1.27.0.Final -Dversion=1.0-SNAPSHOT
     ```
 
 
