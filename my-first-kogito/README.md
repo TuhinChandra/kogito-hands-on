@@ -43,3 +43,16 @@ Then just build the project and run.
 You can take a look at the [OpenAPI definition](http://localhost:8080/v3/api-docs) - automatically generated and included in this service - to determine all available operations exposed by this service. For easy readability you can visualize the OpenAPI definition file using a UI tool like for example available [Swagger UI](https://editor.swagger.io).
 
 In addition, various clients to interact with this service can be easily generated using this OpenAPI definition.
+
+# Kogito Spring Boot Starters
+https://docs.jboss.org/kogito/release/1.27.0/html_single/#ref-kogito-spring-boot-starter_kogito-creating-running
+
+- Kogito decisions Spring Boot starter
+- Kogito predictions Spring Boot starter
+- Kogito processes Spring Boot starter
+- Kogito rules Spring Boot starter
+- Kogito Serverless Workflow Spring Boot starter
+
+# Kogito add-ons
+https://docs.jboss.org/kogito/release/1.27.0/html_single/#ref-kogito-add-ons_kogito-creating-running
+ 
