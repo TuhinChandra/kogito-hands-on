@@ -25,7 +25,7 @@
     <dmn:decisionTable id="_1DE9A91B-C719-4323-9E25-8046400CA6EF" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_20D72A25-C816-410D-BBC2-CBD2F1682286">
         <dmn:inputExpression id="_00C12AAC-DA43-4C7C-840C-29F6FB5F704B" typeRef="number">
-          <dmn:text>Person.age</dmn:text>
+          <dmn:text>Person.Age</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_894D5135-2523-4AFF-BBDB-AC01FB79CC6A"/>
