@@ -10,6 +10,4 @@ public class SalesOrderLine {
 	private String fftSrcType;
 	private int lineNumber;
 	private String fftSiteId;
-	private Status currentStatus;
-	private boolean isAmendable = true;
 }

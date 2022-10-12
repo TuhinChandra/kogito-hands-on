@@ -1,0 +1,13 @@
+package org.acme
+unit AmendmentRule;
+
+import org.acme.SalesOrderLine;
+
+rule isAmendable
+	when
+		$line: SalesOrderLine(currentStatus >= 5) from line
+	then
+    modify($line) {
+    	setAmendable(false)
+    };
+end
