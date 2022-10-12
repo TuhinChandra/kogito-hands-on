@@ -7,6 +7,6 @@ public class SalesOrderLine {
 	
 	private String fftSrcType;
 	private int lineNumber;
-	private int currentStatus;
+	private Status currentStatus;
 	private boolean amendable = true;
 }

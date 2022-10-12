@@ -5,7 +5,7 @@ import org.acme.SalesOrderLine;
 
 rule isAmendable
 	when
-		$line: SalesOrderLine(currentStatus >= 5) from line
+		$line: SalesOrderLine(currentStatus.getValue() >= 2) from line
 	then
     modify($line) {
     	setAmendable(false)
