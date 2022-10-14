@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_Njm4oC3iEDuRJM2tnVLTTA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_kbQJUC3jEDuRJM2tnVLTTA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_lineItem" structureRef="org.acme.SalesOrderLine"/>
   <bpmn2:itemDefinition id="__4358BB8F-224D-4C1F-A9FA-9533B1B36659_namespaceInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__4358BB8F-224D-4C1F-A9FA-9533B1B36659_modelInputXItem" structureRef="java.lang.String"/>
@@ -21,12 +21,12 @@
   <bpmn2:itemDefinition id="processedtravellersType" structureRef=""/>
   <bpmn2:itemDefinition id="__F896B916-45A0-4981-87E0-99DD26B2BB64_lineOutputXItem" structureRef="org.acme.SalesOrderLine"/>
   <bpmn2:itemDefinition id="travellersType" structureRef="org.acme.SalesOrderLine"/>
-  <bpmn2:itemDefinition id="_023DDC92-B50B-4A36-8538-68E71D3333EF" structureRef=""/>
-  <bpmn2:itemDefinition id="_7518CF7E-2A37-42E7-A4DD-C9D90B497F78" structureRef=""/>
-  <bpmn2:message id="_NjoGwC3iEDuRJM2tnVLTTA" itemRef="processedtravellersType" name="processedtravellers"/>
-  <bpmn2:message id="_NjoGwS3iEDuRJM2tnVLTTA" itemRef="travellersType" name="travellers"/>
-  <bpmn2:collaboration id="_3B90A2DC-98D5-4B7D-BD87-A70B433508D9" name="Default Collaboration">
-    <bpmn2:participant id="_46889E33-CEFB-466E-BC6A-CD52135991AC" name="Pool Participant" processRef="salesOrderLines"/>
+  <bpmn2:itemDefinition id="_EAFC3451-AB27-4A87-A3A1-206C64809CD5" structureRef=""/>
+  <bpmn2:itemDefinition id="_EC3B3948-6F28-40B2-A3CE-3F16384015CA" structureRef=""/>
+  <bpmn2:message id="_kbSlkC3jEDuRJM2tnVLTTA" itemRef="processedtravellersType" name="processedtravellers"/>
+  <bpmn2:message id="_kbSlkS3jEDuRJM2tnVLTTA" itemRef="travellersType" name="travellers"/>
+  <bpmn2:collaboration id="_F8376D1F-BB9E-4E8D-B9A5-FFB2C62CAE28" name="Default Collaboration">
+    <bpmn2:participant id="_37448E89-B226-4ED8-B5C0-318D073B3206" name="Pool Participant" processRef="salesOrderLines"/>
   </bpmn2:collaboration>
   <bpmn2:process id="salesOrderLines" drools:packageName="org.acme" drools:version="1.0" drools:adHoc="false" name="salesOrderLines" isExecutable="true" processType="Public">
     <bpmn2:property id="line" itemSubjectRef="_lineItem" name="line"/>
@@ -49,11 +49,11 @@
       <bpmn2:outputSet>
         <bpmn2:dataOutputRefs>_F896B916-45A0-4981-87E0-99DD26B2BB64_lineOutputX</bpmn2:dataOutputRefs>
       </bpmn2:outputSet>
-      <bpmn2:messageEventDefinition drools:msgref="travellers" messageRef="_NjoGwS3iEDuRJM2tnVLTTA"/>
+      <bpmn2:messageEventDefinition drools:msgref="travellers" messageRef="_kbSlkS3jEDuRJM2tnVLTTA"/>
     </bpmn2:startEvent>
     <bpmn2:endEvent id="_2A5484F7-E952-4D89-A215-8C729D579851">
       <bpmn2:incoming>_97E9A0B1-9F04-4EF5-8338-0B3BD7B2CB52</bpmn2:incoming>
-      <bpmn2:messageEventDefinition drools:msgref="processedtravellers" messageRef="_NjoGwC3iEDuRJM2tnVLTTA"/>
+      <bpmn2:messageEventDefinition drools:msgref="processedtravellers" messageRef="_kbSlkC3jEDuRJM2tnVLTTA"/>
     </bpmn2:endEvent>
     <bpmn2:endEvent id="_CA001C4F-4EF1-4054-AFC3-0A23EA444E02">
       <bpmn2:incoming>_F04E0A90-4840-4E16-BD14-FB4910B2CDD3</bpmn2:incoming>
@@ -210,7 +210,7 @@
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_Njm4oC3iEDuRJM2tnVLTTA</bpmn2:source>
-    <bpmn2:target>_Njm4oC3iEDuRJM2tnVLTTA</bpmn2:target>
+    <bpmn2:source>_kbQJUC3jEDuRJM2tnVLTTA</bpmn2:source>
+    <bpmn2:target>_kbQJUC3jEDuRJM2tnVLTTA</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
