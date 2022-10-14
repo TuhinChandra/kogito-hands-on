@@ -1,9 +1,9 @@
 package org.acme;
 
 public enum Status {
-    SO_CREATED(1), 
-    DEL_CREATED(2), 
-    SHIPPED(3), 
+    ORDER_PLACED(1), 
+    SHIPPED(2), 
+    OUT_FOR_DELIVERY(3), 
     DELIVERED(4), 
     INVOICED(5);
 
