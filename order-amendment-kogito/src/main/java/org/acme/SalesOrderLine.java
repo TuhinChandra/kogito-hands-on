@@ -9,4 +9,5 @@ public class SalesOrderLine {
 	private int lineNumber;
 	public Status currentStatus;
 	private boolean amendable = true;
+	private boolean paymentSettled;
 }
