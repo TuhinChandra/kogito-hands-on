@@ -1,6 +1,16 @@
-# org.kie.kogito.kogito-spring-boot-archetype - 1.27.0.Final #
+# Ground Zero
+### Using Springboot
 
-# Running
+Refer: https://docs.jboss.org/kogito/release/1.27.0/html_single/#proc-kogito-creating-project_kogito-creating-running
+
+- Create a maven project using Maven Archetype for Kogito
+
+**mvn archetype:generate** -DarchetypeGroupId=org.kie.kogito -DarchetypeArtifactId=kogito-**spring-boot**-archetype -DgroupId=org.acme -DartifactId=**order-fulfilment-kogito** -DarchetypeVersion=1.27.0.Final -Dversion=1.0-SNAPSHOT
+
+    ``` 
+    mvn archetype:generate -DarchetypeGroupId=org.kie.kogito -DarchetypeArtifactId=kogito-spring-boot-archetype -DgroupId=org.acme -DartifactId=order-fulfilment-kogito -DarchetypeVersion=1.27.0.Final -Dversion=1.0-SNAPSHOT
+    ```
+
 
 - Compile and Run
 
@@ -17,7 +27,7 @@ curl -d '{}' -H "Content-Type: application/json" -X POST http://localhost:8080/g
                                                              
 ```
 
-Once successfully invoked you should see "Hello World" in the console of the running application.
+**Once successfully invoked you should see "Hello World" in the console of the running application.**
 
 The generated application provides out of the box multiple samples of Kogito assets; you can reference the generated Swagger documentation and JUnit tests.
 
@@ -36,3 +46,16 @@ Then just build the project and run.
 You can take a look at the [OpenAPI definition](http://localhost:8080/v3/api-docs) - automatically generated and included in this service - to determine all available operations exposed by this service. For easy readability you can visualize the OpenAPI definition file using a UI tool like for example available [Swagger UI](https://editor.swagger.io).
 
 In addition, various clients to interact with this service can be easily generated using this OpenAPI definition.
+
+# Kogito Spring Boot Starters
+https://docs.jboss.org/kogito/release/1.27.0/html_single/#ref-kogito-spring-boot-starter_kogito-creating-running
+
+- Kogito decisions Spring Boot starter
+- Kogito predictions Spring Boot starter
+- Kogito processes Spring Boot starter
+- Kogito rules Spring Boot starter
+- Kogito Serverless Workflow Spring Boot starter
+
+# Kogito add-ons
+https://docs.jboss.org/kogito/release/1.27.0/html_single/#ref-kogito-add-ons_kogito-creating-running
+ 
